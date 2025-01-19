@@ -1,0 +1,345 @@
+.accent-1 {
+  color: #809C3A;
+}
+
+.accent-2 {
+  color: #ed670a;
+}
+
+.accent-3 {
+  color: #5e7522;
+}
+
+.accent-4 {
+  color: #3e4f12;
+}
+
+html, body {
+  overscroll-behavior-x: none;
+}
+
+.form-check-input:checked {
+  background-color: #3e4f12;
+  border-color: #ed670a;
+}
+
+.btn-primary {
+  --bs-btn-bg: #ed670a;
+  --bs-btn-border-color: #5e7522;
+  --bs-btn-hover-bg: #5e7522;
+  --bs-btn-hover-border-color: #5e7522;
+  --bs-btn-active-bg: #5e7522;
+  --bs-btn-active-border-color: #5e7522;
+}
+
+.btn-primary:hover {
+  background-color: #809C3A;
+}
+
+#toTop {
+  position: fixed;
+  right: 1rem;
+  bottom: -5rem;
+  opacity: 0;
+  animation: toTop linear forwards;
+  animation-timeline: view();
+  animation-range-start: 90vh;
+  animation-range-end: 130vh;
+}
+
+@keyframes toTop {
+  to {
+    opacity: 1;
+    bottom: 1rem;
+  }
+}
+body {
+  background: #F1FABD;
+  color: #4c362b;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2rem;
+}
+
+nav {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  border-color: #F1FABD;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-style: solid;
+}
+
+@media (max-width: 768px) {
+  nav a, nav ul.dropdown-menu, nav div.btn-group a:first-child {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+}
+@media (min-width: 769px) {
+  nav a, nav ul.dropdown-menu, nav div.btn-group a:first-child {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+nav, nav a {
+  color: #F1FABD;
+  background-color: #809C3A;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+nav a.current {
+  color: #3e4f12;
+}
+
+nav a.current:hover {
+  color: #3e4f12;
+}
+
+nav a:hover {
+  color: #3e4f12;
+}
+
+nav div.btn-group a:first-child {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  color: #F1FABD;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul.dropdown-menu {
+  background-color: rgba(255, 251, 236, 0.9411764706);
+}
+
+nav div.btn-group a.dropdown-item {
+  color: #3e4f12;
+  letter-spacing: 0;
+}
+
+nav div.btn-group a.dropdown-item:hover {
+  color: #F1FABD;
+}
+
+a.dropdown-item {
+  letter-spacing: 0;
+  text-transform: capitalize;
+}
+
+a.dropdown-item:hover {
+  color: white;
+  background-color: #ed670a;
+}
+
+a.dropdown-item:focus {
+  background-color: #3e4f12;
+}
+
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+body p, ul.list {
+  margin-top: 1.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+blockquote {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+}
+
+main {
+  background-color: rgba(255, 251, 236, 0.9411764706);
+}
+
+main a, footer a {
+  color: #ed670a;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 769px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
+
+h1 {
+  font-weight: 200;
+  font-family: "League Gothic", sans-serif;
+  text-transform: uppercase;
+  color: #809C3A;
+  text-shadow: 1px 1px rgba(30, 161, 91, 0.2), -5px -3px rgba(239, 221, 173, 0.5);
+}
+
+h1 a {
+  text-decoration: none;
+  color: #809C3A;
+}
+
+h1 a:hover {
+  color: #ed670a;
+}
+
+h1 em {
+  font-family: "Zilla Slab", serif;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h2 i, li i {
+  color: #5e7522;
+}
+
+h3 {
+  display: block;
+  padding: 1rem;
+  background-color: #809C3A;
+  font-family: "Zilla Slab", serif;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  margin-left: -1.5rem;
+  box-shadow: rgba(67, 128, 10, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ul#sub-nav {
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  color: #4c362b;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  list-style: none;
+  padding: 0;
+}
+
+ul#sub-nav li:hover, ul#sub-nav li:hover a {
+  background-color: #ed670a;
+  color: #4c362b;
+}
+
+ul#sub-nav li {
+  line-height: 2.6rem;
+  padding-left: 1rem;
+}
+
+ul#sub-nav li a {
+  text-decoration: none;
+  display: block;
+}
+
+ul#sub-nav li a:hover {
+  color: white;
+}
+
+ul#sub-nav a {
+  color: #4c362b;
+}
+
+ul#sub-nav li.current a {
+  color: #ed670a;
+}
+
+ul#sub-nav li.current a:hover {
+  color: #4c362b;
+}
+
+div#sidebar {
+  max-width: 382px;
+}
+
+.fs-label {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fs-input, .fs-textarea {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #5e7522;
+  border-color: #e3e3d3;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0px;
+  box-shadow: rgba(10, 10, 10, 0.05) 0 1px 4px 0 inset;
+  padding: 0.6rem;
+}
+
+.fs-textarea {
+  height: 200px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-zoom {
+    max-height: 70vh;
+    margin: 0 auto;
+    display: block;
+    opacity: 0;
+    scale: 0.9;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 36%;
+  }
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .scrolling-fadein {
+    -webkit-animation: fadeIn 3s ease-out;
+    -moz-animation: fadeIn 3s ease-out;
+    -ms-animation: fadeIn 3s ease-out;
+    -o-animation: fadeIn 3s ease-out;
+    animation: fadeIn 3s ease-out;
+    animation-range: entry 0% contain 25%;
+    animation-timeline: view();
+  }
+  .scrolling-fadeup {
+    -webkit-animation: fadeInUp 3s ease-out;
+    -moz-animation: fadeInUp 3s ease-out;
+    -ms-animation: fadeInUp 3s ease-out;
+    -o-animation: fadeInUp 3s ease-out;
+    animation: fadeInUp 3s ease-out;
+    animation-range: entry 0% contain 50%;
+    animation-timeline: view();
+  }
+  .scrolling-slideinup {
+    -webkit-animation: slideInUp 3s ease-out;
+    -moz-animation: slideInUp 3s ease-out;
+    -ms-animation: slideInUp 3s ease-out;
+    -o-animation: slideInUp 3s ease-out;
+    animation: slideInUp 3s ease-out;
+    animation-range: entry 10% contain 50%;
+    animation-timeline: view();
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
