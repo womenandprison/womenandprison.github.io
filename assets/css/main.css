@@ -275,6 +275,10 @@ ul#sub-nav li.current a:hover {
   color: #4c362b;
 }
 
+li.borderless {
+  border: 0 none;
+}
+
 div#sidebar {
   max-width: 382px;
 }
