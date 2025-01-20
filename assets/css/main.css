@@ -84,6 +84,10 @@ nav {
   }
 }
 
+nav div.btn-group a:first-child.current {
+  color: #3e4f12;
+}
+
 nav, nav a {
   color: #F1FABD;
   background-color: #809C3A;
